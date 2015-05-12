@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Campus-automation : Campus Automation is a Java, GUI application which stores student records like Firstname, Lastname, Admissionnumber etc. It also stores student marks in four internal examintions. Details are stored in MySQL database.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Campus-automation</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/4k3R/campus-automation">View on GitHub</a>
+
+          <h1 id="project_title">Campus-automation</h1>
+          <h2 id="project_tagline">Campus Automation is a Java, GUI application which stores student records like Firstname, Lastname, Admissionnumber etc. It also stores student marks in four internal examintions. Details are stored in MySQL database.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/4k3R/campus-automation/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/4k3R/campus-automation/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="campus-automation" class="anchor" href="#campus-automation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Campus Automation</h1>
+
+<p>Campus Automation is a GUI based application, which can be used to store student records. It is entirely written using Java, database used is MySql. Student records include </p>
+
+<ul>
+<li>Firstname</li>
+<li>Lastname</li>
+<li>Admission number</li>
+<li>Mobile number</li>
+<li>Sex</li>
+<li>Branch</li>
+<li>Sex</li>
+<li>Date of Birth</li>
+</ul>
+
+<p><img src="https://github.com/4k3R/campus-automation/blob/master/screenshots/home.png?raw=true" alt="Home"></p>
+
+<p>The application also provides option to save marks of students in four internal examinations.</p>
+
+<p><img src="https://github.com/4k3R/campus-automation/blob/master/screenshots/marks.png?raw=true" alt="Marks"></p>
+
+<p>Campus Automation uses JTable to represent student data in a tabular form. Editing and deleting of records is done directly from the table by selecting one row, and then pressing E or DEL on keyboard. </p>
+
+<p><img src="https://github.com/4k3R/campus-automation/blob/master/screenshots/delete.png?raw=true" alt="Delete"></p>
+
+<p>Database needed to be created manually. Database name is "campusautomation", username is "username" and password is "password".</p>
+
+<p>Table student description</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Null</th>
+<th>Key</th>
+<th>Default</th>
+<th>Extra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Firstname</td>
+<td>varchar(20)</td>
+<td>NO</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>Lastname</td>
+<td>varchar(20)</td>
+<td>NO</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>Admissionnumber</td>
+<td>int(4)</td>
+<td>NO</td>
+<td>PRI</td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>Mobile</td>
+<td>varchar(10)</td>
+<td>NO</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>varchar(7)</td>
+<td>NO</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>Branch</td>
+<td>varchar(3)</td>
+<td>NO</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>Sem</td>
+<td>int(1)</td>
+<td>NO</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>dob</td>
+<td>date</td>
+<td>NO</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Table Marks1 description</p>
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Null</th>
+<th>Key</th>
+<th>Default</th>
+<th>Extra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>k601</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>k602</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>k603</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>k604</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>k605</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>k606</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>k607</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>k608</td>
+<td>int(3)</td>
+<td>YES</td>
+<td></td>
+<td>NULL</td>
+<td></td>
+</tr>
+<tr>
+<td>Admissionnumber</td>
+<td>int(4)</td>
+<td>NO</td>
+<td>PRI</td>
+<td>NULL</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>Similar tables for Marks2, Marks3 &amp; Marks4</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Campus-automation maintained by <a href="https://github.com/4k3R">4k3R</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
